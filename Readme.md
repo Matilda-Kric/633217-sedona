@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анжелика Гетман](https://up.htmlacademy.ru/htmlcss/22/user/633217).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Карачев](https://htmlacademy.ru/profile/karachev).
 
 ---
 
