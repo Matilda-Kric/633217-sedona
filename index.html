@@ -2,31 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header> 
-	 	<a href="#">
+	 	<a class="logo">
 			<img src="img/logo.png" width="140" height="72" alt="Логотип Sedona">
 		</a>	
   		<nav class="top-menu">  		  		
 	  		<ul>
-				<li><a href="info.html">информация</a></li>
+				<li><a href="#">информация</a></li>
 				<li><a href="gallery.html">фото и видео</a></li>
-				<li><a href="#map">карта штата</a></li>
-				<li><a href="hotels.html">гостиницы</a></li>
+				<li><a href="map.html">карта штата</a></li>
+				<li><a href="catalog.html">гостиницы</a></li>
 			</ul>
-		</nav>
+		</nav>		
+  	</header>
+
+  	<main class="container">
+  		<h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
 		<section class="intro"> 
     		<img src="img/intro.png" width="459" height="353" alt="Добро пожаловать в великолепную Седону!">
 	    </section>
-  	</header>
 
-  	<main>
-  		<h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
-  		<b>Седона - небольшой городок в Аризоне,
-		<br>заслуживающий большего!</b>
+  		<p>Седона - небольшой городок в Аризоне,
+		<br>заслуживающий большего!</p>
+
 		<section class="features">
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			<div class="feature-item">
@@ -61,7 +63,7 @@
 			</div>
 			<div class="feature-item">
 				<h2>Мало туристов</h2>
-				<p>Большинство едет в гранд каньон и толпится там</p>
+				<p>Большинство едет в Гранд Каньон и толпится там</p>
 			</div>			
 		</section>
 		<section class="search-hotels">
@@ -80,15 +82,9 @@
   		</div>
   		<div class="footer-social"> 
   			<ul>
-  				<li>
-  					<a href="https://twitter.com">Twitter</a>
-  				</li>
-  				<li>
-  					<a href="https://facebook.com">Facebook</a>
-  				</li>
-  				<li>
-  					<a href="https://youtube.com">YouTube</a>
-  				</li>
+  				<li><a href="https://twitter.com">Twitter</a></li>
+  				<li><a href="https://facebook.com">Facebook</a></li>
+  				<li><a href="https://youtube.com">YouTube</a></li>
   			</ul>
   		</div>
   		<div class="footer-copyright">
@@ -100,7 +96,7 @@
   	</footer>
 
   	<section class="modal">
-  		<h2>Поиск гостиницы в Седоне</h2>
+  		<h2>Поиск гостиницы в Седоне</h2>	
   		<!--Форма поиска-->
   	</section>
   </body>
