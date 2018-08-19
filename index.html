@@ -8,15 +8,23 @@
   <body>
   	<!--Шапка сайта-->
   	<header> 
-	 	<a class="logo">
+	 	<a href="#" class="logo">
 			<img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
 		</a>	
   		<nav class="top-menu">  		  		
 	  		<ul>
-				<li><a href="info.html">информация</a></li>
-				<li><a href="gallery.html">фото и видео</a></li>
-				<li><a href="map.html">карта штата</a></li>
-				<li><a href="catalog.html">гостиницы</a></li>
+				<li>
+					<a href="info.html" aria-label="Перейти на страницу информации" tabindex="0">информация</a>
+				</li>
+				<li>
+					<a href="gallery.html" aria-label="Перейти в галерею">фото и видео</a>
+				</li>
+				<li>
+					<a href="map.html" aria-label="Открыть карту Седоны">карта штата</a>
+				</li>
+				<li>
+					<a href="catalog.html" aria-label="Перейти в каталог">гостиницы</a>
+				</li>
 			</ul>
 		</nav>		
   	</header>
@@ -33,7 +41,7 @@
 			<div class="feature-item">
 				<h3>Настоящий городок</h3>
 				<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-				<img src="img/sedona-1.jpg" width="799" height="256" alt="Настоящий город седона">
+				<img src="img/sedona-1.jpg" width="799" height="256" alt="Фотография одной из улиц Седоны">
 			</div>
 			<ul class="recommend-list">
 				<li>
@@ -52,7 +60,7 @@
 			<div class="feature-item">
 				<h3>Там есть мост дьявола</h3>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-				<img src="img/sedona-2.jpg" width="799" height="256" alt="Мост дьявола">
+				<img src="img/sedona-2.jpg" width="799" height="256" alt="Фотография карьера Мост Дьявола">
 			</div>
 			<div class="feature-item">
 				<h3>Небольшая площадь</h3>
@@ -70,32 +78,58 @@
 		<section class="search-hotels">
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>		
-			<img src="img/map.jpg" id="map" class="map" width="1200" height="593" alt="Карта Седоны">
+			<img src="img/map.jpg" id="map" class="map" width="1200" height="593" alt="Карта отлей Седоны">
 		</section>
   	</main>
   	<!--Подвал сайта-->
   	<footer>
   		<div class="tag">
-  			<a href="#">#visitsedona</a>
+  			<a href="#" aria-label="Искать по тегу visitsedona">#visitsedona</a>
   		</div>
   		<div class="footer-social"> 
   			<ul>
-  				<li><a href="https://twitter.com">Twitter</a></li>
-  				<li><a href="https://facebook.com">Facebook</a></li>
-  				<li><a href="https://youtube.com">YouTube</a></li>
+  				<li>
+  					<a href="https://twitter.com" aria-label="Мы в Твитере">Twitter</a>
+  				</li>
+  				<li>
+  					<a href="https://facebook.com" aria-label="Мы на Фейсбуке">Facebook</a>
+  				</li>
+  				<li>
+  					<a href="https://youtube.com" aria-label="Наш канал в Ютьюбе">YouTube</a>
+  				</li>
   			</ul>
   		</div>
   		<div class="footer-copyright">
   			<p>
   				<b>website by</b>
-  				<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+  				<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на страницу интенсива Академии">HTML Academy</a>
   			</p>
   		</div>
   	</footer>
 
   	<section class="modal">
   		<h2>Поиск гостиницы в Седоне</h2>	
-  		<!--Форма поиска-->
+  		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+  			<p>
+  				<label for="arrival-date">Дата заезда:</label> 
+  				<input type="date" id="arrival-date" name="arrival-date" value="2018-08-06">
+  				<img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
+  			</p>
+  			<p>
+  				<label for="departure-date">Дата выезда:</label> 
+  				<input type="date" id="departure-date" name="departure-date" value="2018-09-12">
+  				<img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
+  			</p>
+  			<p>
+	  			<label for="adults">Взрослые:</label> 
+	  			<input type="number" id="adults" name="adults" value="" placeholder="2">
+	  		</p>
+	  		<p>
+	  			<label for="children">Дети:</label> 
+	  			<input type="number" id="children" name="children" value="" placeholder="0">
+	  		</p>
+	  		<button class="button" type="submit">Найти</button>
+  		</form>
   	</section>
   </body>
 </html>
