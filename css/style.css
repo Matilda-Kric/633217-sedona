@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	font-weight: 400;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus{
+	color: #81b3d2;
+}
+
+a:active{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.top-menu{
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+
+	background-color: #ffffff;
+}
+
+.top-menu ul{
+	list-style: none;
+}
+
+.container{
+	background-color: #ffffff;
+}
+
+.intro{
+	text-align: center;
+	background-image: url("img/background-image.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
