@@ -43,9 +43,56 @@ a:active{
 }
 
 .intro{
+	width: 100%;
+	min-height: 300px;
 	text-align: center;
-	background-image: url("img/background-image.jpg");
+	background-image: url("../img/background-image.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
+.feature-tagline{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.feature-tagline b{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.feature-item{
+	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.feature-item h3,
+.recommend-list h3{
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.feature-item p,
+.recommend-list p{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.feature-item:nth-of-type(n+3){
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.recommend-list{
+	color: #000000;
+	text-align: center;
+	list-style: none;
+}
+
+
 
