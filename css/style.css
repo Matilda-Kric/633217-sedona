@@ -34,7 +34,6 @@ a{
 	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
-
 	background-color: #ffffff;
 }
 
@@ -99,6 +98,14 @@ a{
 	color: #ffffff;
 	background-color: transparent;
 	border: 2px solid #ffffff;
+	cursor: pointer;
+}
+
+.filters-button:hover,
+.filters-button:focus{
+	outline: none;
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .feature-tagline{
@@ -194,7 +201,7 @@ a{
 .footer-copyright{
 	line-height: 26px;
 	font-weight: 400;
-  	text-align: center;
+	text-align: center;
 }
 
 .footer-copyright a{
@@ -276,7 +283,7 @@ a{
 .search-form input:focus{
 	outline: none;
 	background-color: #ffffff;
-	border: 2px solid #ebebeb;
+	box-shadow: 0 0 0 2px #ebebeb;
 }
 
 .search-form .search{
@@ -286,6 +293,7 @@ a{
 	color: #ffffff;
 	background-color: #81b3d2;
 	border: none;
+	cursor: pointer;
 }
 
 .search-form .search:hover,
