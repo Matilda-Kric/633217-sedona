@@ -14,6 +14,12 @@ a{
 	text-decoration: none;
 }
 
+.logo{
+	position: absolute;
+	top: 0;
+	left: 600px;
+}
+
 .visually-hidden{
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -164,17 +170,19 @@ a{
 
 .feature-item{
 	display: flex;
+	align-items: center;
+	color: #ffffff;
 	background-color: #81b3d2;
 }
 
 .feature-item-text{
-	width: 400px;
-	height: 256px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	color: #ffffff;
 }
 
-.feature-item h3,
+.feature-item-text h3,
 .recommend-list h3{
 	margin: 0;
 	padding: 0;
@@ -187,7 +195,11 @@ a{
 	flex-direction: row-reverse;
 }
 
-.features .feature-item-text:nth-child(n+3){
+.features .feature-items{
+	min-height: 256px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	color: #000000;
 	background-color: #eeeeee;
 }
@@ -203,35 +215,33 @@ a{
 	text-align: center;
 	list-style: none;
 }
-/*
-.recommend-item::before{
-	display: block;
-	width: 75px;
-	height: 75px;
-	content: "";
-	background-image: url("../img/icon-1.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-*/
 
 .recommend-item{
-	padding-top: 100px;
 	min-height: 85px;
 	width: 285px;
+}
+
+.search-hotels{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.search-hotels-title{
+	width: 435px;
+	min-height: 290px;
+	text-align: center;	
 }
 
 .search-hotels h2{
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
-	text-align: center;
 }
 
 .search-hotels p{
 	line-height: 24px;
 	font-weight: 400;
-	text-align: center;
 }
 
 .footer{
