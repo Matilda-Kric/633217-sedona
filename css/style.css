@@ -14,10 +14,18 @@ a{
 	text-decoration: none;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 .logo{
 	position: absolute;
 	top: 0;
-	left: 600px;
+	left: 50%;
+	width: 140px;
+	height: 72px;
+	margin-left: -70px;
 }
 
 .visually-hidden{
@@ -65,12 +73,6 @@ a{
 	list-style: none;
 }
 
-.top-menu li{
-	width: 239px;
-	height: 56px;
-	box-sizing: border-box;
-}
-
 .top-menu li:nth-of-type(1){
 	padding-left: 72px;
 	text-align: left;
@@ -112,6 +114,8 @@ a{
 }
 
 .filters{
+	width: 100%;
+	min-height: 217px;
 	color: #ffffff;
 	background-image: url("../img/filter_background.jpg");
 	background-repeat: no-repeat;
@@ -230,7 +234,7 @@ a{
 .search-hotels-title{
 	width: 435px;
 	min-height: 290px;
-	text-align: center;	
+	text-align: center;
 }
 
 .search-hotels h2{
@@ -244,11 +248,39 @@ a{
 	font-weight: 400;
 }
 
-.footer{
-	background-color: rgba(0, 0, 0, 0.9);
+.search-hotels-button{
+	font: inherit;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #766357;
+	border: none;
+}
+
+.search-hotels-button:hover,
+.search-hotels-button:focus{
+	outline: none;
+	color: #ffffff;
+	background-color: #604e43;
+}
+
+.search-hotels-button:active{
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.main-footer{
+	display: flex;
+	align-items: center;
+	width: 100%;
+    min-height: 120px;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-tag{
+	width: 400px;
 	text-align: center;
 }
 
@@ -260,14 +292,20 @@ a{
 }
 
 .footer-social ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 	list-style: none;
 }
 
 .footer-social{
+	width: 400px;
 	text-align: center;
 }
 
 .social-button{
+	margin-left: 6px;
 	font: inherit;
 	color: #ffffff;
 	background-color: #81b3d2;
@@ -285,39 +323,24 @@ a{
 }
 
 .footer-copyright{
+	width: 400px;
 	line-height: 26px;
 	font-weight: 400;
 	text-align: center;
+}
+
+.footer-copyright p{
+	margin: 0;
+	padding: 0;
 }
 
 .footer-copyright a{
 	color: #000000;
 }
 
-.search-hotels-button{
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: 700;
-	text-align: center;
-	color: #ffffff;
-	background-color: #766357;
-}
-
 .modal{
 	background-color: #ffffff;
 	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-}
-
-.search-hotels-button:hover,
-.search-hotels-button:focus{
-	outline: none;
-	color: #ffffff;
-	background-color: #604e43;
-}
-
-.search-hotels-button:active{
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #503e33;
 }
 
 .search-form{
@@ -397,52 +420,92 @@ a{
 	background-color: #5496bd;
 }
 
+.catalog-sorting p{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	line-height: 18px;
+}
+
 .catalog .amount{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
 
-.catalog-sorting a{
+.catalog-sorting {
+	margin: 0 auto;
+	width: 1056px;
+	min-height: 85px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sort a{
+	font-size: 12px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort a:hover,
+.sort a:focus{
+	outline: none;
+	color: #81b3d2;
+}
+
+.sort a:active{
+	color: #000000;
+	border: none;
+}
+
+.sort-up-down a{
 	font-size: 12px;
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-sorting a:hover,
-.catalog-sorting a:focus{
-	outline: none;
-	color: #81b3d2;
+.sort-up-down a:hover,
+.sort-up-down a:focus{
+	color: #000000;
 }
 
-.catalog-sorting a:active{
-	color: #000000;
+.sort-up-down a:active{
+	color: #81b3d2;
 }
 
 .catalog-sorting .active-sort{
 	color: #81b3d2;
+	border: none;
 }
 
 .catalog-list{
+	margin: 0 auto;
+	padding: 0;
+	width: 1056px;
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 }
 
-.catalog-list h3{
+.catalog-item h3{
+	margin: 0;
+	padding: 0;
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.catalog-list a{
+.catalog-item a{
 	color: #000000;
 }
 
-.catalog-list a:hover,
-.catalog-list a:focus{
+.catalog-item a:hover,
+.catalog-item a:focus{
 	outline: none;
 	color: #81b3d2;
 }
 
-.catalog-list a:focus{
+.catalog-item a:active{
 	color: rgba(0, 0, 0, 0.3);
 }
 
