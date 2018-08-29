@@ -37,7 +37,7 @@
 			<section class="filters"> 
 				<h2 class="visually-hidden">Форма выбора гостиниц</h2>
 				<form class="filters-form" action="https://echo.htmlacademy.ru" method="get" oninput="mincost.value=rangecost.value"> 
-					<fieldset>
+					<fieldset class="infrastructure">
 						<legend>Инфраструктура:</legend>
 						<ul>
 							<li class="filter-option">
@@ -63,7 +63,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="housing-type">
 						<legend>Тип жилья:</legend>
 						<ul>
 							<li class="filter-option">
@@ -89,7 +89,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="cost">
 						<label for="rangecost">Стоимость в сутки(Р):</label>
 						<p>
 							от
@@ -100,15 +100,16 @@
 							<output name="maxcost">3000</output>
 						</p>
 						<input type="range" id="rangecost" name="range-cost" min="0" max="3000" step="100" value="0">
+						<button class="filters-button" type="submit">Показать</button>	
 					</fieldset>
-					<button class="filters-button" type="submit">Показать</button>
+					
 				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список гостиниц</h2>
 				<div class="catalog-sorting">
 					<p class="amount">Найдено: 3</p>
-					<p>Сортировка:</p>
+					<p class="sorting">Сортировка:</p>
 					<div class="sort">
 						<a class="active-sort" href="#price" aria-label="Отсортировать по цене">По цене</a>
 						<a href="#type" aria-label="Отсортировать по типу">По типу</a>
