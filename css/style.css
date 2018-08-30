@@ -397,12 +397,21 @@ img{
 }
 
 .filters-form{
+	margin: 0 72px;
 	display: flex;
 }
 
 .filters-form fieldset{
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
 	width: 200px;
 	border: none;
+}
+
+.filters-form ul{
+	margin: 0;
+	padding: 0;
 }
 
 .filters-form .infrastructure{
@@ -423,6 +432,7 @@ img{
 }
 
 .filters-button{
+	padding: 5px 35px;
 	font: inherit;
 	color: #ffffff;
 	background-color: transparent;
@@ -438,8 +448,7 @@ img{
 }
 
 .catalog-sorting{
-	margin: 0 72px;
-	min-height: 85px;
+	padding: 30px 72px;
 	display: flex;
 }
 
@@ -499,6 +508,10 @@ img{
 	color: #81b3d2;
 }
 
+.sort-down{
+	margin-left: 12px;
+}
+
 .catalog-sorting .active-sort{
 	color: #81b3d2;
 	border: none;
@@ -507,10 +520,65 @@ img{
 .catalog-list{
 	margin: 0 auto;
 	padding: 0;
-	width: 1056px;
+	list-style: none;
+}
+
+.catalog-item{
+	padding: 30px 72px;
+	display: flex;
+	border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item:last-child{
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item-image{
+	width:135px;
+	height: 90px;
+	display: block;
+}
+
+.catalog-item-info{
+	margin-left: 30px;
+	min-height: 90px;
+	min-width: 260px;
 	display: flex;
 	flex-direction: column;
-	list-style: none;
+	justify-content: space-between;
+}
+
+.catalog-item-info .hotel-type{
+	text-align: left;
+	display: flex;
+}
+
+.hotel-type span{
+	min-width: 120px;
+}
+
+.catalog-item-buttons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.hotel-rating{
+	margin-left: auto;
+	width: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.catalog-item-buttons .detail-btn,
+.catalog-item-buttons .booking-btn{
+	padding: 3px 15px;
+}
+
+.catalog-item p{
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-item h3{
@@ -568,7 +636,11 @@ img{
 	background-color: #503e33;
 }
 
-.catalog-item .star{
+.hotel-class{
+	display: flex;
+}
+
+.hotel-class .star{
 	width: 18px;
 	height: 17px;
 	background-image: url("../img/star.svg");
@@ -576,7 +648,9 @@ img{
 	background-size: 18px 17px;
 }
 
-.catalog-item .hotel-rating{
+.hotel-rating .rating{
+	padding: 3px 15px;
+	min-width: 85px;
 	color: #666666;
 	background-color: #f2f2f2;
 }
