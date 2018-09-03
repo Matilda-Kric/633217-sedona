@@ -1,7 +1,9 @@
 body{
 	position: relative;
+
 	margin: 0;
 	padding: 0;
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -25,27 +27,26 @@ img{
 	top: 0;
 	left: 0;
 	right: 0;
+	margin: auto;
 	width: 140px;
 	height: 72px;
-	margin: auto;
+
+	
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	padding: 0;
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .btn:hover,
@@ -67,17 +68,13 @@ input[type="radio"].visually-hidden {
 }
 
 .top-menu{
-	min-height: 56px;
+	min-height: 55px;
 	width: 100%;
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
 	background-color: #ffffff;
-}
-
-.top-menu a{
-	color: #000000;
 }
 
 .top-menu ul{
@@ -89,25 +86,28 @@ input[type="radio"].visually-hidden {
 	flex-shrink: 0;
 }
 
-.top-menu li:nth-child(4n+1){
-	margin: 15px 0;
+.top-menu a{
+	margin-top: 14px;
+	margin-bottom: 16px;
+	display: block;
+	color: #000000;
+}
+
+.top-menu li:nth-of-type(4n+1){
 	margin-left: 72px;
 	text-align: left;
 }
-.top-menu li:nth-child(4n+2){
-	margin: 15px 0;
+.top-menu li:nth-of-type(4n+2){
 	margin-left: 147px;
 	margin-right: auto;
 	text-align: left;
 }
 
-.top-menu li:nth-child(4n+3){
-	margin: 15px 0;
+.top-menu li:nth-of-type(4n+3){
 	margin-right: 164px;
 	text-align: right;
 }
-.top-menu li:nth-child(4n+4){
-	margin: 15px 0;
+.top-menu li:nth-of-type(4n+4){
 	margin-right: 72px;
 	text-align: right;
 }
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-tagline-wrapper .tagline-tittle{
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 
 .feature-tagline{
@@ -196,11 +196,11 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3{
-	margin-top: 46px;
+	margin-top: 47px;
 }
 
 .text-wrapper .feature-number{
-	margin-top: 23px;
+	margin-top: 25px;
 }
 
 .text-wrapper .feature-description{
@@ -208,7 +208,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features .feature-items{
-	padding-top: 46px;
+	padding-top: 48px;
 	padding-bottom: 60px;
 	display: flex;
 	flex-wrap: wrap;
@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
 
 
 .feature-items .feature-description{
-	margin-top: 23px;
+	margin-top: 20px;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -306,7 +306,7 @@ input[type="radio"].visually-hidden {
 .search-hotels h2{
 	margin: 0;
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 48px;
 	margin-bottom: 25px;
 	font-size: 30px;
 	line-height: 36px;
@@ -322,7 +322,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotels-button{
-	padding: 30px 140px;
+	padding: 31px 140px 30px;
 	min-width: 500px;
 	font-size: 21px;
 	font-weight: 700;
@@ -351,9 +351,8 @@ input[type="radio"].visually-hidden {
 	left: 0;
 	right: 0;
 	margin: auto;
-	padding: 55px;
+	padding: 57px 55px;
 	width: 568px;
-	min-height: 395px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -369,17 +368,25 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 }
 
+
 .search-form .search-form-item{
 	position: relative;
+	width: 458px;
 	margin-bottom: 30px;
 	display: flex;
-	/*align-items: center;
-	justify-content: space-between;*/
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search-form-item.people{
+	width: 229px;
+}
+
+.search-form-item.people:last-of-type{
+	width: 171px;
 }
 
 .search-form-item label{
-	margin-top: 8px;
-	margin-right: 20px;
 	display: block;
 }
 
@@ -425,7 +432,20 @@ input[type="radio"].visually-hidden {
 	fill: #81b3d2;
 }
 
+.people-number.minus{
+	position: absolute;
+	top: 5px;
+    left: 115px;
+}
+
+.people-number.plus{
+	position: absolute;
+	top: 5px;
+    right: 9px;
+}
+
 .search-form-item .people-number{
+	padding: 0;
 	width: 11px;
 	height: 11px;
 	font-size: 24px;
@@ -454,9 +474,9 @@ input[type="radio"].visually-hidden {
 
 .search-form .search{
 	padding: 0;
-	padding-top: 14px;
-	padding-bottom: 12px;
-	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 25px;
 	width: 100%;
 	font-size: 21px;
 	font-weight: 700;
@@ -484,7 +504,7 @@ input[type="radio"].visually-hidden {
 	bottom: 0px;
 	display: flex;
 	align-items: center;
-	min-height: 127px;
+	min-height: 125px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
