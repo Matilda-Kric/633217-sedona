@@ -7,6 +7,7 @@
 
 	search.addEventListener("click", function(evt){
 		evt.preventDefault();
+		popup.classList.remove("search-form-error");
 		popup.classList.toggle("search-form-close");
 		arrivalDate.focus();
 	});			
