@@ -5,17 +5,17 @@
 	var departureDate = popup.querySelector("[name=departure-date]");
 	var adults = popup.querySelector("[name=adults]");
 
-  document.addEventListener("DOMContentLoaded", function(evt){
+    document.addEventListener("DOMContentLoaded", function(evt){
 		popup.classList.remove("search-form-error");
-		popup.classList.add("search-form-close");
+		popup.classList.remove("search-form-show");
 	});
 
 	search.addEventListener("click", function(evt){
 		evt.preventDefault();
 		popup.classList.remove("search-form-error");
-		popup.classList.toggle("search-form-close");
+		popup.classList.toggle("search-form-show");
 		arrivalDate.focus();
-	});			
+	});	
 
 	popup.addEventListener("submit", function (evt) {
     if (!arrivalDate.value || !departureDate.value || !adults.value) {
