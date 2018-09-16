@@ -1,4 +1,3 @@
-
 	var search = document.querySelector(".search-hotels-button");
 	var popup  = document.querySelector(".search-form");
 	var arrivalDate = popup.querySelector("[name=arrival-date]");
